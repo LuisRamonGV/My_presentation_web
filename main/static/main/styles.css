@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.intro-box {
+    background-color: #444;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    border: 3px solid #fff;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.column {
+    width: 18%;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column ul ul {
+    margin-left: 1rem;
+    list-style: disc;
+}
+
+/* Sección de proyectos */
+.projects-section {
+    padding: 2rem;
+}
+
+.project {
+    background-color: #555;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 700px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project:nth-child(even) {
+    align-self: flex-end;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+/* Sección de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-container, .email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whatsapp-container img, .email-container img {
+    margin-bottom: 0.5rem;
+}

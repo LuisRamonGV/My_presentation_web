@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Presentación</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#redes-sociales">Redes sociales</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div class="intro-box" id="sobre-mi">
+        <img src="{% static 'images/mi-foto.jpg' %}" alt="Mi Foto" class="profile-photo">
+        <h1>Mi Nombre</h1>
+        <h2>Mi Nivel de Estudios</h2>
+        <p>Una breve introducción sobre mí...</p>
+
+        <!-- Contenedor de columnas -->
+        <div class="columns">
+            <!-- Columna 1 -->
+            <div class="column">
+                <h3>Frontend</h3>
+                <ul>
+                    <li><strong>Lenguajes:</strong>
+                        <ul>
+                            <li>Python</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </li>
+                    <li><strong>Frameworks y herramientas:</strong>
+                        <ul>
+                            <li>Vue</li>
+                            <li>Tailwind</li>
+                            <li>React</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="column">
+                <h3>Backend</h3>
+                <ul>
+                    <li><strong>Lenguajes:</strong>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                    </li>
+                    <li><strong>Frameworks y herramientas:</strong>
+                        <ul>
+                            <li>Django</li>
+                            <li>Spring</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 3 -->
+            <div class="column">
+                <h3>Analisis de datos</h3>
+                <ul>
+                    <li><strong>Lenguajes:</strong>
+                        <ul>
+                            <li>Python</li>
+                            <li>R</li>
+                        </ul>
+                    </li>
+                    <li><strong>Herramientas:</strong>
+                        <ul>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 4 -->
+            <div class="column">
+                <h3>Otros</h3>
+                <ul>
+                    <li><strong>Herramientas:</strong>
+                        <ul>
+                            <li>Git</li>
+                            <li>Docker</li>
+                        </ul>
+                    </li>
+                    <li><strong>Conceptos:</strong>
+                        <ul>
+                            <li>CI/CD</li>
+                            <li>Agile</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 5 -->
+            <div class="column">
+                <h3>Educación</h3>
+                <ul>
+                    <li><strong>Grado:</strong>
+                        <ul>
+                            <li>Ingeniería en Sistemas Computacionales</li>
+                        </ul>
+                    </li>
+                    <li><strong>Institución:</strong>
+                        <ul>
+                            <li>Universidad de Guanajuato</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluir la sección de proyectos -->
+    {% include 'main/projects.html' %}
+
+    <!-- Incluir la sección de redes sociales -->
+    {% include 'main/contact.html' %}
+</body>
+</html>
