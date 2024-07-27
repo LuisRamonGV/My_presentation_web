@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página de Presentación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     {% load static %}
     <link rel="stylesheet" href="{% static 'main/styles.css' %}">
+    <title>Portafolio</title>
 </head>
 <body>
     <!-- Barra de navegación -->
@@ -13,110 +14,86 @@
         <ul>
             <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#redes-sociales">Redes sociales</a></li>
+            <li><a href="#redes-sociales">Contacto</a></li>
         </ul>
     </nav>
 
     <!-- Contenido de la página -->
     <div class="intro-box" id="sobre-mi">
-        <img src="{% static 'images/mi-foto.jpg' %}" alt="Mi Foto" class="profile-photo">
-        <h1>Mi Nombre</h1>
-        <h2>Mi Nivel de Estudios</h2>
-        <p>Una breve introducción sobre mí...</p>
+        <img src="{% static 'profile.jpg' %}" alt="Foto de perfil" class="profile-photo">
+        <h1>Luis Ramon Garcia Vazquez</h1>
+        <h2>Ingeniero en sistemas computacionales</h2>
+        <p>Desarrollador Fullstack, conocimiento en desarrollo de software, desarrollo web e inteligencia artificial enfocada en analisis de datos y vision por computadora.</p>
 
         <!-- Contenedor de columnas -->
         <div class="columns">
-            <!-- Columna 1 -->
             <div class="column">
                 <h3>Frontend</h3>
                 <ul>
-                    <li><strong>Lenguajes:</strong>
-                        <ul>
-                            <li>Python</li>
-                            <li>Javascript</li>
-                        </ul>
-                    </li>
-                    <li><strong>Frameworks y herramientas:</strong>
-                        <ul>
-                            <li>Vue</li>
-                            <li>Tailwind</li>
-                            <li>React</li>
-                        </ul>
-                    </li>
+                    <li><strong>Lenguajes</strong></li>
+                    <li>-JavaScript</li>
+                    <li>-HTML y CSS</li>
+                    <li><strong>Frameworks y herramientas</strong></li>
+                    <li>-Vue.js</li>
+                    <li>-React</li>
+                    <li>-Nuxt</li>
+                    <li>-Tailwind</li>
+                    <li>-Bootstrap</li>
                 </ul>
             </div>
-
-            <!-- Columna 2 -->
             <div class="column">
                 <h3>Backend</h3>
                 <ul>
-                    <li><strong>Lenguajes:</strong>
-                        <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                        </ul>
-                    </li>
-                    <li><strong>Frameworks y herramientas:</strong>
-                        <ul>
-                            <li>Django</li>
-                            <li>Spring</li>
-                        </ul>
-                    </li>
+                    <li><strong>Lenguajes</strong></li>
+                    <li>-JavaScript</li>
+                    <li>-Java</li>
+                    <li>-Python</li>
+                    <li>-PHP</li>
+                    <li><strong>Frameworks y herramientas</strong></li>
+                    <li>-NestJS</li>
+                    <li>-Express</li>
+                    <li>-SpringBoot</li>
+                    <li>-Django</li>
+                    <li>-Laravel</li>
+                    <li>-Node.js</li>
                 </ul>
             </div>
-
-            <!-- Columna 3 -->
             <div class="column">
-                <h3>Analisis de datos</h3>
+                <h3>Inteligencia artificial</h3>
                 <ul>
-                    <li><strong>Lenguajes:</strong>
-                        <ul>
-                            <li>Python</li>
-                            <li>R</li>
-                        </ul>
-                    </li>
-                    <li><strong>Herramientas:</strong>
-                        <ul>
-                            <li>Pandas</li>
-                            <li>NumPy</li>
-                        </ul>
-                    </li>
+                    <li><strong>Lenguajes</strong></li>
+                    <li>-Python</li>
+                    <li>-C++</li>
+                    <li>-SQL</li>
+                    <li><strong>Frameworks y herramientas</strong></li>
+                    <li>-OpenCV</li>
+                    <li>-Pandas</li>
+                    <li>-NumPy</li>
+                    <li>-Pyplot</li>
+                    <li>-Power BI</li>
+                    <li>-Excel</li>
                 </ul>
             </div>
-
-            <!-- Columna 4 -->
             <div class="column">
-                <h3>Otros</h3>
+                <h3>Bases de datos</h3>
                 <ul>
-                    <li><strong>Herramientas:</strong>
-                        <ul>
-                            <li>Git</li>
-                            <li>Docker</li>
-                        </ul>
-                    </li>
-                    <li><strong>Conceptos:</strong>
-                        <ul>
-                            <li>CI/CD</li>
-                            <li>Agile</li>
-                        </ul>
-                    </li>
+                    <li><strong>Relacionales</strong></li>
+                    <li>-MySQL</li>
+                    <li>-PostreSQL</li>
+                    <li><strong>No Relacionales</strong></li>
+                    <li>-MongoDB</li>
                 </ul>
             </div>
-
-            <!-- Columna 5 -->
             <div class="column">
-                <h3>Educación</h3>
+                <h3>Herramientas de desarrollo</h3>
                 <ul>
-                    <li><strong>Grado:</strong>
-                        <ul>
-                            <li>Ingeniería en Sistemas Computacionales</li>
-                        </ul>
-                    </li>
-                    <li><strong>Institución:</strong>
-                        <ul>
-                            <li>Universidad de Guanajuato</li>
-                        </ul>
-                    </li>
+                    <li>-Git</li>
+                    <li>-Github</li>
+                    <li>-VScode</li>
+                    <li>-Anaconda</li>
+                    <li>-Docker</li>
+                    <li>-Linux</li>
+                    <li>-Jira</li>
                 </ul>
             </div>
         </div>
